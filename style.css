@@ -1,0 +1,103 @@
+input,
+textarea,
+select,
+div,
+a,
+li,
+button {
+    outline: none !important;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Remove tap highlight on mobile */
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+}
+
+/* Remove autofill bg color */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+/*smoother text*/
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.dd.active .plus {
+    display: none;
+}
+
+.dd.active .minus {
+    display: block;
+}
+
+.dd.active .dd-cont {
+    display: block;
+}
+
+.dd-cont {
+    display: none;
+}
+
+.st-row .slick-list {
+    overflow: visible !important;
+}
+
+.st-row.slick-initialized .slick-slide {
+    display: flex !important;
+}
+
+ul.slick-dots {
+    margin-bottom: 0;
+    padding-left: 0;
+    line-height: 0%;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.slick-dots button {
+    display: block;
+    padding: 0;
+    background-color: #fff;
+    text-indent: -9999px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #242D32;
+    border-color: #242D32;
+    width: 14px;
+    height: 14px;
+}
+
+.show_block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
